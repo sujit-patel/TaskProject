@@ -39,7 +39,7 @@ function Signup() {
         <div className="w-1/3 bg-[#084B3E] p-10 flex flex-col justify-between">
           <div>
             <img
-              src="/src/assets/text_logo.png"
+              src="/assets/text_logo.png"
               alt="Logo"
               className="mb-8 w-32"
             />
