@@ -36,15 +36,12 @@ function Signup() {
     <>
       <div className="flex w-[900px] rounded-4xl overflow-hidden">
         {/* left div */}
-        <div className="w-1/3 bg-[#084B3E] p-10 flex flex-col justify-between">
+        <div className="w-2/5 bg-[#084B3E] p-10 flex flex-col justify-between">
           <div>
-            <img
-              src="/assets/text_logo.png"
-              alt="Logo"
-              className="mb-8 w-32"
-            />
+            <img src="/assets/text_logo.png" alt="Logo" className="mb-8 w-32" />
           </div>
-          <div className="text-[#F9E2BA] text-2xl font-medium leading-relaxed">
+          {/* <div className="text-[#F9E2BA] text-2xl font-medium leading-relaxed font-Gilroy"> */}
+          <div className="text-[#F9E2BA] font-Gilroy_sb text-3xl font-semibold ">
             Say hello to global food and beverage producers and suppliers, all
             in one place
           </div>
@@ -52,13 +49,16 @@ function Signup() {
 
         {/* Right div */}
         <div className="w-2/3 bg-white p-10 space-y-15">
-          <h2 className="text-2xl font-bold mb-6">
+          <h2 className="text-2xl font-Gilroy_b font-semibold mb-6">
             Let’s get started <br />
             with a few simple steps
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6 w-3/4 font-Gilroy_sb font-semibold"
+          >
             <div>
-              <label className="block mb-1 font-medium">Email</label>
+              <label className="block mb-1">Email</label>
               <input
                 type="email"
                 name="email"
@@ -66,7 +66,7 @@ function Signup() {
                 onChange={handleChange}
                 required
                 placeholder="Enter Your Email"
-                className="border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 w-full "
+                className="border-b border-gray-400 font-light focus:outline-none focus:border-green-600 py-2 w-full "
               />
             </div>
             <div>
@@ -78,7 +78,7 @@ function Signup() {
                 onChange={handleChange}
                 required
                 placeholder="Enter Your Full Name"
-                className="border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 w-full "
+                className="border-b border-gray-400 font-light focus:outline-none focus:border-green-600 py-2 w-full "
               />
             </div>
             <div>
@@ -90,12 +90,12 @@ function Signup() {
                 onChange={handleChange}
                 required
                 placeholder="Enter Your Password"
-                className="border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 w-full "
+                className="border-b border-gray-400 font-light focus:outline-none focus:border-green-600 py-2 w-full "
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-green-500 text-white rounded-lg py-3 font-semibold cursor-pointer hover:bg-green-600"
+              className="w-full bg-green-500 text-white rounded-lg py-3 font-Gilroy_b font-semibold cursor-pointer hover:bg-green-600"
             >
               Sign up
             </button>
@@ -112,11 +112,10 @@ function Signup() {
             </div>
           )}
 
-          <div className="mt-6 text-gray-500 text-sm">
+          <div className="mt-6 text-gray-400 text-sm font-Mulish-light">
             By signing up, you agree to our{" "}
-            <span className="text-green-600 cursor-pointer underline">
-              Terms of Service.
-            </span>{" "}
+            <span className="cursor-pointer underline">Terms of Service.</span>{" "}
+            <br />
             Already have an account?{" "}
             <span className="text-green-600 cursor-pointer underline font-semibold">
               Log in
